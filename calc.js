@@ -40,7 +40,11 @@ let EnterEqual = function () {
         ans.value = fNum - sNum;
         break;
       case "/":
-        ans.value = fNum / sNum;
+        if (sNum) {
+          ans.value = fNum / sNum;
+        } else {
+          ans.value = 0;
+        }
         break;
     }
   }
