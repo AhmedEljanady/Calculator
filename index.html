@@ -13,11 +13,11 @@
         transform: translateX(24%);
         text-align: center;
         padding: 4px;
-        border-radius: 5px;
+        border-radius: 15px;
         font-size: 24px;
       }
       .width:hover {
-        box-shadow: 0px 0px 3px 1px rgb(0 0 0 / 19%);
+        box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 19%);
       }
       table {
         /* float: left; */
@@ -60,6 +60,36 @@
       td {
         border-radius: 5px;
         width: 64px;
+      }
+      //----------Mobile screen----------//
+      @media only screen and (max-device-width: 480px) {
+        table {
+          margin: 20% auto;
+          border-radius: 15px;
+          border: 16px solid #aa3d16;
+        }
+        tr {
+          height: 50%;
+        }
+        td {
+          border-radius: 15px;
+          width: 25%;
+        }
+        .width {
+          width: 90px;
+          height: 100px;
+          font-size: 48px;
+          margin-bottom: 30px;
+        }
+        #ans {
+          padding: 25px 2px 25px 2px;
+        }
+        #td-n {
+          font-size: 96px;
+          width: 250px;
+          margin-bottom: 12px;
+          border-radius: 0;
+        }
       }
     </style>
   </head>
